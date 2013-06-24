@@ -1,0 +1,169 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html { 
+    height: 100%; 
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+	font-family: Garamond, sans-serif;
+	background: #eeeeee;
+}
+
+#map-canvas {
+    width: 100%; 
+    height: 500px;
+}
+
+h1 { font-size: 4.0em; }
+p, li, button { font-size: 1.8em; }
+
+.clear { clear: both; }
+
+#header {
+	background: #bbbbbb;
+	padding: 15px 0 15px 15px;
+}
+
+#content {
+	padding: 15px 30px 0 0;
+}
+
+#main-content {
+    margin-left: 330px;
+	max-width: 800px;
+}
+
+#sidebar {
+    width: 300px;
+    float: left;
+    padding: 0 0 0 15px;
+}
+
+#search {
+    width: 55px;
+}
+
+.ui-button, .ui-button-text .ui-button {  
+    font-size: 1.8em; !important; 
+}
+
+.button {
+	-moz-box-shadow:inset 0px 1px 0px 0px #f29c93;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #f29c93;
+	box-shadow:inset 0px 1px 0px 0px #f29c93;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #fe1a00), color-stop(1, #ce0100) );
+	background:-moz-linear-gradient( center top, #fe1a00 5%, #ce0100 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fe1a00', endColorstr='#ce0100');
+	background-color:#fe1a00;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #d83526;
+	display:inline-block;
+	color:#ffffff;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:2px 20px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #b23e35;
+	cursor: pointer;
+}
+
+.button:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ce0100), color-stop(1, #fe1a00) );
+	background:-moz-linear-gradient( center top, #ce0100 5%, #fe1a00 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ce0100', endColorstr='#fe1a00');
+	background-color:#ce0100;
+	cursor: pointer;
+}
+
+.button:active {
+	position:relative;
+	top:1px;
+	cursor: pointer;
+}
+
+/* Timepicker CSS ------------------------------------- */
+
+.ui-timepicker-div .ui-widget-header { margin-bottom: 8px; }
+.ui-timepicker-div dl { text-align: left; }
+.ui-timepicker-div dl dt { height: 25px; margin-bottom: -25px; }
+.ui-timepicker-div dl dd { margin: 0 10px 10px 65px; }
+.ui-timepicker-div td { font-size: 90%; }
+.ui-tpicker-grid-label { background: none; border: none; margin: 0; padding: 0; }
+
+.ui-timepicker-rtl{ direction: rtl; }
+.ui-timepicker-rtl dl { text-align: right; }
+.ui-timepicker-rtl dl dd { margin: 0 65px 10px 10px; }
+
+/* Dialog styles ------------------------------------- */
+
+/* Overlay */
+#dialog-overlay {
+    background-color:#eee; cursor:wait;
+}
+
+/* Container */
+#dialog-container {
+    font: 16px/22px 'Trebuchet MS', Verdana, Arial; 
+    text-align:left; 
+    background:#eee;
+    border:2px solid #444444;
+}
+
+#dialog-container .header {
+    height:30px; 
+    line-height:30px; 
+    width:100%; 
+    color:#fff; 
+    background:#999;
+    font-weight:bold;
+}
+
+#dialog-container .header span {
+    padding-left:8px;
+}
+
+#dialog-container .message {
+    color:#333; 
+    font-size:14px; 
+    margin:0; 
+    padding:12px 4px 12px 8px;
+}
+
+#dialog-container .buttons {
+    line-height:20px; 
+    width:160px; 
+    float:right; 
+    padding:10px 8px 0;
+} 
+
+#dialog-container .buttons div {
+    float:right; 
+    margin-left:4px; 
+    cursor:pointer;
+} 
+
+#dialog-container a.modal-close,
+#dialog-container a.modal-close:link,
+#dialog-container a.modal-close:active,
+#dialog-container a.modal-close:visited {
+    text-decoration:none; 
+    font-weight:bold; 
+    position:absolute; 
+    right:10px; 
+    top:2px; 
+    color:#fff;
+}
+
+#dialog-container a.modal-close:hover {
+    color:#ccc;
+}

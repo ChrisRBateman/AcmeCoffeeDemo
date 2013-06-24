@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+        <link rel="stylesheet" href="/acmecoffee/css/style.css" type="text/css" media="screen" />
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-timepicker-addon.js"></script>
+        <script type="text/javascript" src="js/highcharts.js"></script>
+        <script type="text/javascript" src="js/exporting.js"></script>
+        <script type="text/javascript" src="js/jquery.simplemodal.1.4.4.min.js"></script>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=__ADD_YOUR_KEY_HERE__&sensor=false"></script>
+        <script type="text/javascript" src="js/AcmeCoffee.js"></script>
+    </head>
+    
+    <body>
+        <div id="header">
+            <img style="float: left; width: 50px; height: 50px;" src="img/Coffee-break-icon.png" />
+		    <h1>Acme Coffee</h1>
+	    </div>
+	
+    	<div id="content">
+    		<div id="sidebar">
+    		    <br/><br/>
+    			<p>Date: <input type="text" id="datepicker" size="30" /></p>
+    			<br/>
+    			<p>Time: <input type="text" id="timepicker" size="30" /></p>
+    			<br/>
+    			<div id="search" class="button">Search</div>
+    		</div>
+    		
+    		<div id="main-content">
+    		    <div id="loading-image" style="display: block; text-align:center;margin-top: 100px;">
+        	        <img src="img/ajax-loader.gif" alt="loading..." />
+        		</div>
+        		<div id="map-canvas" style="display: none;"/>
+    		</div>
+    		
+    		<div class="clear"></div>
+    	</div>
+    	
+    	<div id="no-sales-data-dialog" style="display: none;">
+		    <div class="header"><span>Information</span></div>
+		    <div class="message">
+                Select a date and time to view sales data
+            </div>
+            <br/>
+            <div class="buttons">
+			    <div class="ok button">OK</div>
+		    </div>
+	    </div>
+	    
+	    <div id="data-not-available-dialog" style="display: none;">
+		    <div class="header"><span>Information</span></div>
+		    <div class="message">
+                Data not available
+            </div>
+            <br/>
+            <div class="buttons">
+			    <div class="ok button">OK</div>
+		    </div>
+	    </div>
+            
+        <script type="text/javascript">
+            $(document).ready(function() {
+                runAcmeCoffee();
+            });
+        </script>
+    </body>
+</html>
