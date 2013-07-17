@@ -10,4 +10,5 @@ A live demo is at http://chrisb.textdriven.com/demo/acmecoffee/
 
 Select  Date: Monday April 15, 2013
         Time: 08:00
+        
 Click on the markers to open the popup.        
